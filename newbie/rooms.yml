@@ -98,14 +98,6 @@
   exits:
     - roomId: "newbie:tree"
       direction: север
-- id: stuffroom
-  title: "Служебная комната"
-  description: >-
-    Здесь находятся служебные вещи и монстры для скриптов.
-  npcs:
-    - id: "newbie:bunny"
-      respawnChance: 50
-  exits:
-    - roomId: "newbie:tree"
-      direction: север
+    - roomId: "boothill:outside_town"
+      direction: восток
 
