@@ -38,7 +38,8 @@ module.exports = (srcPath) => {
             case 4:
                 Broadcast.sayAt(this.room, `Пианистка начала исполнять популярную песню про ${player.vname}.`)
                 break;
-        }        
+        }
+
       },
 
       playerLeave: state => function (player) {

@@ -100,4 +100,6 @@
       direction: север
     - roomId: "boothill:outside_town"
       direction: восток
+    - roomId: "gurba:gate_east"
+      direction: запад
 

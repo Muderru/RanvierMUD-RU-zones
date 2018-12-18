@@ -155,7 +155,7 @@
     бутылками с непонятным пойлом. Тут не так много посетителей, но 
     шума от них, как от огромной толпы народа. Они сидят за кривыми
     стульями и покосившимися столами и что-то громко обсуждают.
-  npcs: ["boothill:pianist", "boothill:drunkminer"]    
+  npcs: ["boothill:pianist", "boothill:drunkminer"]
   items:
     - id: "boothill:piano"
       respawnChance: 100   

@@ -68,7 +68,7 @@
         - "boothill:10ghat": 10
 - id: spider
   keywords: [ "пещерный", "паук" ]
-  level: 3
+  level: 4
   name: "пещерный паук"
   rname: "пещерного паука"
   dname: "пещерному пауку"
@@ -76,15 +76,16 @@
   tname: "пещерным пауком"
   pname: "пещерном пауке"
   gender: "male"
-  min_damage: 7
-  max_damage: 21
+  min_damage: 8
+  max_damage: 24
   damageVerb: 'укусил'
   description: >-
     Даже его самые маленькие собратья внушают многим людям страх, ну а эта метровая 
     тварь с полуметровыми хелицерами одним своим видом способна напугать до смерти.
   attributes:
-    health: 250
+    health: 350
     strength: 14
+    acid_damage: 2    
   behaviors:
     combat: true
     ranvier-aggro:
