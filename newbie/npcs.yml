@@ -14,10 +14,11 @@
     Он выглядит нелепо, но опасно.
   attributes:
     health: 150
+    mana: 100
     strength: 12
   behaviors:
     combat: true
-    ranvier-aggro:
+    aggro:
       delay: 1
       towards:
         players: true

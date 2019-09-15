@@ -1,17 +1,14 @@
 'use strict';
 
-module.exports = (srcPath) => {
-  const Broadcast = require(srcPath + 'Broadcast');
+const { Broadcast } = require('ranvier');
 
-  return  {
+module.exports = {
     listeners: {
       get: state => function (player) {
-      
-      Broadcast.sayAt(player, `Вы попытались сорвать красный цветок, но тут на вас набросился огромный монстр, похожий на кролика-мутанта!`);
-      player.room.spawnNpc(state, 'newbie:bunny');
-      player.removeItem(this);
+        Broadcast.sayAt(player, `Вы попытались сорвать красный цветок, но тут на вас набросился огромный монстр, похожий на кролика-мутанта!`);
+        player.room.spawnNpc(state, 'newbie:bunny');
+        player.removeItem(this);
       }
 
     }
-  };
 };

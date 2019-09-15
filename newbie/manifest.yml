@@ -1,3 +1,4 @@
 title: "Нора под деревом"
-info:
-  respawnInterval: 20
+behaviors:
+  progressive-respawn:
+    interval: 60

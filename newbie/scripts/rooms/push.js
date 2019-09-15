@@ -1,18 +1,17 @@
 'use strict';
 
-module.exports = (srcPath) => {
-  const Broadcast = require(srcPath + 'Broadcast');
+const { Broadcast } = require('ranvier');
 
-  return  {
+module.exports = {
     listeners: {
       command: state => function (player, commandName, args) {
           
         if (!args || args != 'кнопку') {
            return Broadcast.sayAt(player, `Что вы хотите нажать?`); 
         }
-      
+
         Broadcast.sayAt(player, `Вы нажали кнопку.`);
-        
+
         if (player.gender === 'male') {
            Broadcast.sayAtExcept(player.room, `${player.name} нажал кнопку.`, player);
         } else if (player.gender === 'female') {
@@ -29,5 +28,4 @@ module.exports = (srcPath) => {
         return player.room.openDoor(nextRoom);
       }
     }
-  };
 };

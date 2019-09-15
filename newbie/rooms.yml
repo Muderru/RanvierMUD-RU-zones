@@ -54,7 +54,7 @@
     Вы находитесь у конца темного туннеля, в глаза вам брызжет яркий свет.
     В центре комнаты установлена огромная красная кнопка, освещенная 
     разноцветными прожекторами.
-  behaviors:
+  metadata:
       commands: [ 'нажать' ]
   items:
     - id: "newbie:button"
@@ -68,7 +68,7 @@
     "newbie:tree":
       lockedBy: "newbie:test_key"
       locked: true
-      closed: true      
+      closed: true
 - id: tree
   title: "Северная часть поля"
   description: >-
@@ -76,8 +76,6 @@
     Чуть дальше на юге вы замечаете дорогу, ведущую к городу. Также
     тут привлекает внимание странная нора в холме на востоке.
   script: 'tree'
-  behaviors:
-      commands: [ 'сорвать' ]
   items:
     - id: "newbie:tree"
       respawnChance: 100

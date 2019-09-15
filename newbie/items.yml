@@ -14,7 +14,6 @@
   type: POTION
   metadata:
     level: 1
-  behaviors:
     usable:
       spell: "potion"
       charges: 5
@@ -48,13 +47,14 @@
   tname: "веткой"
   pname: "ветке"
   gender: "female"
+  damageVerb: "хлестнула"
   type: WEAPON
   roomDesc: "Ветка"
   keywords: [ "ветка" ]
   description: "Неказистая ветка с дерева."
   metadata:
     level: 1
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 1
     quality: common
     minDamage: 8
