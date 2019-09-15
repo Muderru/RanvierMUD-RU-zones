@@ -1,9 +1,8 @@
 'use strict';
 
-module.exports = (srcPath) => {
-  const Broadcast = require(srcPath + 'Broadcast');
+const { Broadcast } = require('ranvier');
 
-  return  {
+module.exports = {
     listeners: {
       command: state => function (player, commandName, args) {
       
@@ -27,5 +26,4 @@ module.exports = (srcPath) => {
         return;
       }
     }
-  };
 };

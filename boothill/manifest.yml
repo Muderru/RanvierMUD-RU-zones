@@ -1,3 +1,4 @@
 title: "Шахтерское поселение"
-info:
-  respawnInterval: 240
+behaviors:
+  progressive-respawn:
+    interval: 340

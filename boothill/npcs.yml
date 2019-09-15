@@ -16,14 +16,15 @@
   attributes:
     health: 150
     strength: 12
+    mana: 100
   behaviors:
     combat: true
-    ranvier-aggro:
+    aggro:
       delay: 2
       towards:
         players: true
         npcs: false
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true
     lootable:
@@ -47,16 +48,18 @@
   min_damage: 8
   max_damage: 24
   damageVerb: 'огрел'
-  travelVerb: "ушел шатаясь"
+  travelVerbIn: "пришёл шатаясь"
+  travelVerbOut: "ушёл шатаясь"
   description: >-
     Это несчастное существо почти не похоже на человека. А, может 
     он и не человек вовсе. У него налитые кровью глаза и трясущиеся руки.
   attributes:
     health: 300
     strength: 18
+    mana: 150
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 20
       restrictTo: ['boothill:infront_jail', 'boothill:infront_saloon', 'boothill:infront_store']    
     lootable:
@@ -85,10 +88,11 @@
   attributes:
     health: 350
     strength: 14
-    acid_damage: 2    
+    acid_damage: 2
+    mana: 150
   behaviors:
     combat: true
-    ranvier-aggro:
+    aggro:
       delay: 2
       towards:
         players: true
@@ -114,9 +118,7 @@
     Вилл - это уже не молодой мужчина с сединой в волосах. Видно, что 
     он повидал не мало на своем веку, а также что с ним надо держать ухо востро.
   level: 99
-  pacifist: true
-  behaviors:
-    ranvier-sentient: true
+  metadata:
     vendor:
       items:
         "boothill:sweetroll":
@@ -149,21 +151,23 @@
   min_damage: 8
   max_damage: 24
   damageVerb: 'огрел'
-  travelVerb: "ушел"  
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
   description: >-
     Это несчастное существо почти не похоже на человека. А, может 
     он и не человек вовсе. У него налитые кровью глаза и трясущиеся руки.
   attributes:
     health: 300
     strength: 18
+    mana: 150
   behaviors:
     combat: true
-    ranvier-aggro:
+    aggro:
       delay: 2
       towards:
         players: true
         npcs: true    
-    ranvier-wander:
+    wander:
       interval: 20
       areaRestricted: true
     lootable:
@@ -193,6 +197,7 @@
     health: 400
     strength: 25
     armor: 2
+    mana: 150
   behaviors:
     combat: true
     lootable:
@@ -224,6 +229,7 @@
     health: 400
     strength: 25
     armor: 2
+    mana: 150
   behaviors:
     combat: true
     lootable:
@@ -248,7 +254,6 @@
   max_damage: 3000
   level: 99
   script: 'pianist'
-  pacifist: true
   description: "Вы видите женщину лет тридцати, сильно накрашенную и очень фигуристую."
   behaviors:
     ranvier-sentient: true
@@ -264,8 +269,5 @@
   min_damage: 1500
   max_damage: 3000
   level: 99
-  pacifist: true
   quests: ['boothill:killkobolds']  
   description: "Этот шахтер сильно пьян и едва способен шевелить языком. Видно, что он чем-то сильно расстроен."
-  behaviors:
-    ranvier-sentient: true
