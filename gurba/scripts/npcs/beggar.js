@@ -1,30 +1,25 @@
-
 'use strict';
 
-module.exports = (srcPath) => {
-  const Broadcast = require(srcPath + 'Broadcast');
-
-  return  {
+module.exports = {
     listeners: {
       playerEnter: state => function (player) {
         if (this.hasEffectType('speaking')) {
           return;
         }
 
-        const speak = state.EffectFactory.create('speak', this, {}, {
+        const speak = state.EffectFactory.create('speak', {}, {
           messageList: [
             "Подайте на пропитание ветерану войны!",
           ],
           outputFn: message => {
             message = message.replace(/%player%/, player.name);
-            state.ChannelManager.get('говорить').send(state, this, message);
+            state.ChannelManager.get('say').send(state, this, message);
           }
-          
         });
         
         let rand = 0;
         rand = Math.floor((Math.random() * 100) + 1);
-        if (rand > 80) {
+        if (rand > 60) {
             this.addEffect(speak);
         }
       },
@@ -36,5 +31,4 @@ module.exports = (srcPath) => {
         }
       }
     }
-  };
 };

@@ -1,3 +1,4 @@
 title: "Город Гурба"
-info:
-  respawnInterval: 600
+behaviors:
+  progressive-respawn:
+    interval: 620

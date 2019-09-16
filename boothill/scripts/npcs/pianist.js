@@ -39,8 +39,10 @@ module.exports = {
           }
         });
         this.addEffect(speak);
-        Broadcast.sayAt(this.room, song);
-
+        let thisRoom = this.room;
+        setTimeout(function() {
+          Broadcast.sayAt(thisRoom, song);
+        }, 6100);
       },
 
       playerLeave: state => function (player) {

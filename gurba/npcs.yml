@@ -10,9 +10,7 @@
   description: >-
     Он страдает ожирением, а также алчностью.
   level: 99
-  pacifist: true
-  behaviors:
-    ranvier-sentient: true
+  metadata:
     vendor:
       items:
         "gurba:rock":
@@ -50,9 +48,7 @@
   description: >-
     Вы видите красивую девушку с длинной черной косой и ромашкой за ухом.
   level: 99
-  pacifist: true
-  behaviors:
-    ranvier-sentient: true
+  metadata:
     vendor:
       items:
         "gurba:roses":
@@ -73,9 +69,7 @@
     Вы видите коренастого мускулистого гнома, черного от копоти. Он много 
     времени провел у кузнечного горна.
   level: 99
-  pacifist: true
-  behaviors:
-    ranvier-sentient: true
+  metadata:
     vendor:
       items:
         "gurba:sword":
@@ -99,7 +93,8 @@
   min_damage: 15
   max_damage: 55
   damageVerb: 'пнул'
-  travelVerb: "устало ушел"
+  travelVerbIn: "устало пришёл"
+  travelVerbOut: "ушёл устало"
   description: >-
     Никто не знает, кто он и откуда. И кажется он и сам 
     об этом не вспомнит.
@@ -110,7 +105,7 @@
     crushing_damage: 2
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true
     lootable:
@@ -120,7 +115,7 @@
           max: 30
       pools:
         - "boothill:10ghat": 10
-        - "gurba:stuff"        
+        - "gurba:stuff"
 - id: man
   keywords: [ "горожанин" ]
   level: 10
@@ -134,7 +129,8 @@
   min_damage: 15
   max_damage: 55
   damageVerb: 'огрел'
-  travelVerb: "ушел по делам"
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл по делам"
   description: >-
     Это мужчина лет тридцати, самый типичный представитель среднего класса.
     На нем надет добротный, но потрепанный костюм. В руках у него толстая 
@@ -146,7 +142,7 @@
     crushing_damage: 2
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true
     lootable:
@@ -156,7 +152,7 @@
           max: 30
       pools:
         - "gurba:pants": 10
-        - "gurba:stuff"        
+        - "gurba:stuff"
 - id: woman
   keywords: [ "горожанка" ]
   level: 10
@@ -170,7 +166,8 @@
   min_damage: 15
   max_damage: 55
   damageVerb: 'пырнула'
-  travelVerb: "ушла"
+  travelVerbIn: "пришла"
+  travelVerbOut: "ушла"
   description: >-
     Вы видите немолодую женщину в разноцветных одеяниях. Ее 
     жизненный опыт научил ее скрывать в просторных одеяниях 
@@ -182,7 +179,7 @@
     piercing_damage: 2
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true
     lootable:
@@ -206,7 +203,8 @@
   min_damage: 15
   max_damage: 55
   damageVerb: 'огрел'
-  travelVerb: "поплелся"
+  travelVerbIn: "пришёл"
+  travelVerbOut: "поплелся"
   description: >-
     Нынешние тяжелые времена тяжело сказались на этом несчастном человеке.
     Местные люди сильно обнищали, а вместе с ними разорился и этот торговец.
@@ -217,7 +215,7 @@
     earth_damage: 2
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 20
       restrictTo: ['gurba:market1', 'gurba:market2', 'gurba:market3', 'gurba:market4']    
     lootable:
@@ -241,8 +239,9 @@
   min_damage: 12
   max_damage: 44
   damageVerb: 'ударил'
-  travelVerb: "поплелся"
-  script: 'beggar'  
+  travelVerbIn: "приковылял"
+  travelVerbOut: "заковылял"
+  script: 'beggar'
   description: >-
     Жизнь не пощадила этого беднягу: старик остался без родных и средств
     к существованию. Он побирается на улицах города, надеясь на милость
@@ -254,7 +253,7 @@
     cutting_damage: 2
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true
     lootable:
@@ -311,7 +310,8 @@
   min_damage: 19
   max_damage: 67
   damageVerb: 'рубанул'
-  travelVerb: "ушел"  
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
   description: >-
     Мускулистый мужчина закован с ног до головы в металлические доспехи.
     Он пристально следит за прохожими и пресекает проникновению
@@ -321,10 +321,10 @@
     strength: 30
     agility: 30
     cutting_damage: 1
-    crushing_damage: 1    
+    crushing_damage: 1
   behaviors:
     combat: true
-    ranvier-wander:
+    wander:
       interval: 30
       areaRestricted: true    
     lootable:
@@ -349,6 +349,3 @@
     Вот уже много лет он управляет Гильдией бойцов Гурбы.
     Несмотря на возраст, это все еще крепкий мужчина и умелый боец.
   level: 99
-  pacifist: true
-  behaviors:
-    ranvier-sentient: true

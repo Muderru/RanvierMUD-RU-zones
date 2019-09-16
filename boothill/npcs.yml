@@ -255,8 +255,6 @@
   level: 99
   script: 'pianist'
   description: "Вы видите женщину лет тридцати, сильно накрашенную и очень фигуристую."
-  behaviors:
-    ranvier-sentient: true
 - id: drunkminer
   keywords: ["мудрый", "старик", "старый"]
   name: "пьяный шахтер"

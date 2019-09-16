@@ -20,7 +20,6 @@
     stats:
       armor: 1
       health: 5
-  behaviors:
     sellable:
       value: 15
       currency: золото
@@ -46,7 +45,6 @@
     stats:
       armor: 1
       agility: 1
-  behaviors:
     sellable:
       value: 25
       currency: золото
@@ -90,7 +88,6 @@
     minDamage: 5
     maxDamage: 15
     speed: 2.0
-  behaviors:
     sellable:
       value: 5
       currency: золото
@@ -115,7 +112,6 @@
     itemLevel: 4
     stats:
       health: 5
-  behaviors:
     sellable:
       value: 10
       currency: золото
@@ -141,7 +137,6 @@
     stats:
       armor: 1
       crushing_resistance: 1
-  behaviors:
     sellable:
       value: 10
       currency: золото
@@ -169,7 +164,6 @@
     speed: 2.5
     stats:
       piercing_damage: 1
-  behaviors:
     sellable:
       value: 5
       currency: золото
@@ -214,7 +208,6 @@
     stats:
       crushing_damage: 1
       strength: 1
-  behaviors:
     sellable:
       value: 10
       currency: золото
@@ -249,7 +242,6 @@
   type: POTION
   metadata:
     level: 1
-  behaviors:
     usable:
       spell: "potion"
       charges: 5
@@ -296,7 +288,6 @@
     stats:
       armor: 3
       cutting_resistance: 1
-  behaviors:
     sellable:
       value: 20
       currency: золото
@@ -322,7 +313,6 @@
     stats:
       armor: 1
       earth_resistance: 1
-  behaviors:
     sellable:
       value: 20
       currency: золото
@@ -348,7 +338,6 @@
     stats:
       armor: 1
       cold_resistance: 1
-  behaviors:
     sellable:
       value: 20
       currency: золото
