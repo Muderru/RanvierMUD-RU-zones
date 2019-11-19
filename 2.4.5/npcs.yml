@@ -1,0 +1,772 @@
+- id: bankguard
+  keywords: [ "охранник" ]
+  level: 12
+  name: "охранник банка"
+  rname: "охранника банка"
+  dname: "охраннику банка"
+  vname: "охранника банка"
+  tname: "охранником банка"
+  pname: "охраннике банка"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  description: >-
+    Большой и грузный мужик, готовый навалять любому.
+  attributes:
+    health: 650
+    strength: 22
+    armor: 2
+    cutting_damage: 4
+  behaviors:
+    combat: true
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 100
+      pools:
+        - "2.4.5:bankkey": 100
+        - "2.4.5:short_sword": 10
+- id: barkeep
+  keywords: [ "бармен", "косоглазый" ]
+  level: 12
+  name: "косоглазый бармен"
+  rname: "косоглазого бармена"
+  dname: "косоглазому бармену"
+  vname: "косоглазого бармена"
+  tname: "косоглазым барменом"
+  pname: "косоглазом бармене"
+  gender: "male"
+  description: >-
+    Он не слишком то любит, когда люди на него пялятся. Но пойло у него отменное.
+  metadata:
+    vendor:
+      items:
+        "2.4.5:classbeer":
+          cost: 20
+          currency: золото
+        "2.4.5:special":
+          cost: 100
+          currency: золото
+        "2.4.5:firebreath":
+          cost: 50
+          currency: золото
+      enterMessage: "Горло промочить не желаете?"
+      leaveMessage: "Скатертью дорога!"	
+- id: beggar
+  keywords: [ "нищий", "грязный" ]
+  level: 9
+  name: "грязный нищий"
+  rname: "грязного нищего"
+  dname: "грязному нищему"
+  vname: "грязного нищего"
+  tname: "грязным нищим"
+  pname: "грязном нищем"
+  gender: "male"
+  min_damage: 13
+  max_damage: 49
+  damageVerb: 'ударил'
+  travelVerbIn: "приковылял"
+  travelVerbOut: "уковылял"
+  description: >-
+    Этот старик уже несколько лет не мылся и от него очень сильно воняет.
+  attributes:
+    health: 650
+    strength: 20
+    agility: 20
+    armor: 2
+    cutting_damage: 3
+  behaviors:
+    combat: true
+    wander:
+      interval: 30
+      areaRestricted: true
+    lootable:
+      currencies:
+        золото:
+          min: 5
+          max: 10
+      pools:
+        - "gurba:rags": 10
+- id: dragon
+  keywords: [ "молодой", "дракон" ]
+  level: 20
+  name: "молодой дракон"
+  rname: "молодого дракона"
+  dname: "молодому дракону"
+  vname: "молодого дракона"
+  tname: "молодым драконом"
+  pname: "молодом драконе"
+  gender: "male"
+  min_damage: 31
+  max_damage: 107
+  damageVerb: 'опалил'
+  description: >-
+    Даже его самые маленькие собратья внушают многим людям страх, ну а эта метровая 
+    тварь с полуметровыми хелицерами одним своим видом способна напугать до смерти.
+  attributes:
+    health: 1000
+    strength: 34
+    armor: 4
+    fire_damage: 6
+    fire_resistance: 6
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 100
+          max: 250
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:gem": 10
+- id: dwarf
+  keywords: [ "коренастый", "дварф" ]
+  level: 15
+  name: "коренастый дварф"
+  rname: "коренастого дварфа"
+  dname: "коренастому дварфу"
+  vname: "коренастого дварфа"
+  tname: "коренастым дварфом"
+  pname: "коренастом дварфе"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'огрел'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Хотя дварф невелик, но очень плотно сложен. В силе он не уступит человеку.
+  attributes:
+    health: 800
+    strength: 34
+    armor: 2
+    cutting_damage: 4
+    cutting_resistance: 4
+  behaviors:
+    combat: true
+    wander:
+      interval: 25
+      restrictTo: ['2.4.5:mine_tunnel16', '2.4.5::mine_tunnel17', '2.4.5:mine_tunnel15', '2.4.5:mine_tunnel19', '2.4.5:mine_tunnel18', '2.4.5:mine_tunnel22']
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: fire_giant
+  keywords: [ "огненный", "великан" ]
+  level: 15
+  name: "огненный великан"
+  rname: "огненного великана"
+  dname: "огненному великану"
+  vname: "огненного великана"
+  tname: "огненным великаном"
+  pname: "огненном великане"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'огрел'
+  description: >-
+    Представьте великана, облитого маслом и подожженного. Он ну очень зол.
+  attributes:
+    health: 850
+    strength: 34
+    armor: 2
+    fire_damage: 5
+    fire_resistance: 5
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:fire_sword": 10
+- id: frog
+  keywords: [ "маленькая", "лягушка" ]
+  level: 10
+  name: "маленькая лягушка"
+  rname: "маленькой лягушки"
+  dname: "маленькой лягушке"
+  vname: "маленькую лягушку"
+  tname: "маленькой лягушкой"
+  pname: "маленькой лягушке"
+  gender: "female"
+  min_damage: 15
+  max_damage: 55
+  damageVerb: 'обожгла кислотой'
+  description: >-
+    Мерзкая слизистая тварь, уставилась на вас не моргая.
+  attributes:
+    health: 550
+    strength: 24
+    acid_damage: 3
+    acid_resistance: 3
+  behaviors:
+    combat: true
+    lootable:
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:crown": 10
+- id: frost_giant
+  keywords: [ "ледяной", "великан" ]
+  level: 15
+  name: "ледяной великан"
+  rname: "ледяного великана"
+  dname: "ледяному великану"
+  vname: "ледяного великана"
+  tname: "ледяным великаном"
+  pname: "ледяном великане"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'сокрушил'
+  description: >-
+    Огромная гора льда движется к вам, испуская волны холода и ненависти.
+  attributes:
+    health: 850
+    strength: 34
+    armor: 2
+    cold_damage: 5
+    cold_resistance: 5
+  behaviors:
+    combat: true
+    aggro:
+      delay: 3
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:frost_sword": 10
+- id: giant
+  keywords: [ "великан" ]
+  level: 14
+  name: "великан"
+  rname: "великана"
+  dname: "великану"
+  vname: "великана"
+  tname: "великаном"
+  pname: "великане"
+  gender: "male"
+  min_damage: 23
+  max_damage: 79
+  damageVerb: 'пнул'
+  description: >-
+    Огромный человекоподобный монстр, который способен растоптать вас в одно мгновение.
+  attributes:
+    health: 750
+    strength: 34
+    armor: 2
+    crushing_damage: 4
+    crushing_resistance: 4
+  behaviors:
+    combat: true
+    aggro:
+      delay: 3
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: goplayer
+  keywords: [ "игрок" ]
+  level: 14
+  name: "игрок"
+  rname: "игрока"
+  dname: "игроку"
+  vname: "игрока"
+  tname: "игроком"
+  pname: "игроке"
+  gender: "male"
+  min_damage: 23
+  max_damage: 79
+  damageVerb: 'пырнул'
+  description: >-
+    Вы видите сидящего перед доской человека, размышляющего над игрой. 
+    Кажется, сейчас ему не помешает помощь и почему бы не предложить
+    ему сыграть одну игру?
+  attributes:
+    health: 750
+    strength: 34
+    armor: 2
+    piercing_damage: 3
+    piercing_resistance: 1
+  behaviors:
+    combat: true
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: harry
+  keywords: [ "Гарри", "гарри" ]
+  level: 14
+  name: "надоедливый Гарри"
+  rname: "надоедливого Гарри"
+  dname: "надоедливому Гарри"
+  vname: "надоедливого Гарри"
+  tname: "надоедливым Гарри"
+  pname: "надоедливом Гарри"
+  gender: "male"
+  min_damage: 23
+  max_damage: 79
+  damageVerb: 'ударил'
+  description: >-
+    Очень любопытный молодой человек. Наблюдает за вами не отрываясь.
+  attributes:
+    health: 750
+    strength: 34
+    armor: 2
+    cutting_damage: 3
+    cutting_resistance: 1
+  behaviors:
+    combat: true
+    wander:
+      interval: 20
+      restrictTo: ['2.4.5:vill_road2', '2.4.5:vill_shore', '2.4.5:vill_road1', '2.4.5:station', '2.4.5:vill_track', '2.4.5:jetty', '2.4.5:eastroad1']    
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: hobgoblin
+  keywords: [ "хобгоблин" ]
+  level: 13
+  name: "хобгоблин"
+  rname: "хобгоблина"
+  dname: "хобгоблину"
+  vname: "хобгоблина"
+  tname: "хобгоблином"
+  pname: "хобгоблине"
+  gender: "male"
+  min_damage: 21
+  max_damage: 73
+  damageVerb: 'резанул'
+  description: >-
+    Этот хобгоблин выглядит очень мерзко и наверняка у него скверный характер.
+  attributes:
+    health: 750
+    strength: 34
+    armor: 2
+    cutting_damage: 3
+    cutting_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 1
+      towards:
+        players: true
+        npcs: false   
+    wander:
+      interval: 20
+      restrictTo: ['2.4.5:mine_tunnel_room', '2.4.5:mine_tunnel5', '2.4.5:mine_tunnel4', '2.4.5:mine_tunnel3', '2.4.5:mine_tunnel2', '2.4.5:mine_tunnel']
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: innkeep
+  keywords: ["трактирщик", "том", "владелец"]
+  name: "трактирщик Том"
+  rname: "трактирщика Тома"
+  dname: "трактирщику Тому"
+  vname: "трактирщика Тома"
+  tname: "трактирщиком Томом"
+  pname: "трактирщике Томе"
+  gender: "male"  
+  description: >-
+    Вы видите большого полного мужчину, пышущего здоровьем.
+  level: 99
+  metadata:
+    vendor:
+      items:
+        "2.4.5:com_meal":
+          cost: 20
+          currency: золото
+        "2.4.5:mer_meal":
+          cost: 50
+          currency: золото
+        "2.4.5:ric_meal":
+          cost: 50
+          currency: золото
+        "2.4.5:mug":
+          cost: 50
+          currency: золото          
+      enterMessage: "Заходите, дорогие гости! Заказывайте еду и выпивку, не стесняйтесь!"
+      leaveMessage: "Всего доброго!"
+- id: leo
+  keywords: ["архимаг", "Архимаг", "леопольд"]
+  name: "архимаг Леопольд"
+  rname: "архимага Леопольда"
+  dname: "архимагу Леопольду"
+  vname: "архимага Леопольда"
+  tname: "архимагом Леопольдом"
+  pname: "архимаге Леопольде"
+  gender: "male"  
+  description: >-
+    Вы видите перед собой одного из самых великих волшебников современности.
+  level: 99
+  pacifist: true
+  behaviors:
+    ranvier-sentient: true
+- id: octopus
+  keywords: [ "осьминог" ]
+  level: 14
+  name: "осьминог"
+  rname: "осьминога"
+  dname: "осьминогу"
+  vname: "осьминога"
+  tname: "осьминогом"
+  pname: "осьминоге"
+  gender: "male"
+  min_damage: 23
+  max_damage: 79
+  damageVerb: 'хлестнул'
+  description: >-
+    Вы видите огромного осьминога с длинными и цепкими щупальцами.
+  attributes:
+    health: 850
+    strength: 34
+    armor: 2
+    crushing_damage: 4
+    crushing_resistance: 4
+  behaviors:
+    combat: true
+    aggro:
+      delay: 1
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 100
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:chest": 100
+- id: orc
+  keywords: [ "орк" ]
+  level: 14
+  name: "орк"
+  rname: "орка"
+  dname: "орку"
+  vname: "орка"
+  tname: "орком"
+  pname: "орке"
+  gender: "male"
+  min_damage: 23
+  max_damage: 79
+  damageVerb: 'рубанул'
+  description: >-
+    Это грязный и вонючий орк.
+  attributes:
+    health: 850
+    strength: 34
+    armor: 2
+    cutting_damage: 4
+    cutting_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:knife": 10
+        - "2.4.5:curved_knife": 10
+        - "2.4.5:axe": 10
+- id: orc_shayman
+  keywords: [ "орк", "шаман" ]
+  level: 15
+  name: "шаман орков"
+  rname: "шамана орков"
+  dname: "шаману орков"
+  vname: "шамана орков"
+  tname: "шаманом орков"
+  pname: "шамане орков"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'поразил магией'
+  description: >-
+    Вы видите уродливого шамана орков. Он намного шире обычных орков.
+  attributes:
+    health: 850
+    strength: 34
+    armor: 4
+    chaos_damage: 4
+    chaos_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:gold_staff": 10
+        - "2.4.5:orc_slayer": 100
+- id: rat
+  keywords: [ "черная", "крыса" ]
+  level: 10
+  name: "черная крыса"
+  rname: "черной крысы"
+  dname: "черной крысе"
+  vname: "черную крысу"
+  tname: "черной крысой"
+  pname: "черной крысе"
+  gender: "female"
+  min_damage: 15
+  max_damage: 55
+  damageVerb: 'укусила'
+  description: >-
+    Этот грызун настоящий великан.
+  attributes:
+    health: 850
+    strength: 34
+    crushing_damage: 4
+    crushing_resistance: 4
+  behaviors:
+    combat: true
+    aggro:
+      delay: 3
+      towards:
+        players: true
+        npcs: false
+    wander:
+      interval: 20
+      restrictTo: ['2.4.5:sub_door_trap', '2.4.5:sub_after_trap']
+    lootable:
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:stone": 10
+- id: shopkeep
+  keywords: ["хозяин", "свилл", "хозяин магазина"]
+  name: "торговец Свилл"
+  rname: "торговца Свилла"
+  dname: "торговцу Свиллу"
+  vname: "торговца Свилла"
+  tname: "торговцем Свиллом"
+  pname: "торговце Свилле"
+  gender: "male"  
+  description: >-
+    Он - суровый громадный человек.
+  level: 99
+  metadata:
+    vendor:
+      items:
+        "2.4.5:torch":
+          cost: 25
+          currency: золото
+      enterMessage: "Лучшие товары со всего мира!"
+      leaveMessage: "Заходите еще!"
+- id: stone_giant
+  keywords: [ "каменный", "гигант" ]
+  level: 15
+  name: "каменный гигант"
+  rname: "каменного гиганта"
+  dname: "каменному гиганту"
+  vname: "каменного гиганта"
+  tname: "каменным гигантом"
+  pname: "каменном гиганте"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'истоптал'
+  description: >-
+    Вы видите огромную человекоподобную фигуру из отполированного камня.
+  attributes:
+    health: 850
+    strength: 34
+    earth_damage: 5
+    armor: 2
+    cutting_resistance: 2
+    crushing_resistance: 2
+    piercing_resistance: 2
+  behaviors:
+    combat: true
+    aggro:
+      delay: 3
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:stone_sword": 10
+- id: troll
+  keywords: [ "тролль" ]
+  level: 12
+  name: "тролль"
+  rname: "тролля"
+  dname: "троллю"
+  vname: "тролля"
+  tname: "троллем"
+  pname: "тролле"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  damageVerb: 'огрел'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Этот тролль выглядит как гнилое дерево.
+  attributes:
+    health: 760
+    strength: 34
+    armor: 4
+    crushing_damage: 3
+    crushing_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 6
+      towards:
+        players: true
+        npcs: false   
+    wander:
+      interval: 20
+      restrictTo: ['2.4.5:forest2', '2.4.5:clearing', '2.4.5:slope']
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 150
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: wolf
+  keywords: [ "серый", "волк" ]
+  level: 11
+  name: "серый волк"
+  rname: "серого волка"
+  dname: "серому волку"
+  vname: "серого волка"
+  tname: "серым волком"
+  pname: "сером волке"
+  gender: "male"
+  min_damage: 17
+  max_damage: 61
+  damageVerb: 'укусил'
+  description: >-
+    Вы видите серого волка, бегущего недалеко от вас. У него затравленный взгляд, но огромные клыки.
+  attributes:
+    health: 720
+    strength: 34
+    armor: 1
+    cutting_damage: 3
+    cutting_resistance: 1
+  behaviors:
+    combat: true
+    wander:
+      interval: 25
+      restrictTo: ['2.4.5:plain1', '2.4.5:plain2', '2.4.5:plain3', '2.4.5:plain4', '2.4.5:plain5', '2.4.5:plain6', '2.4.5:plain7', '2.4.5:plain8', '2.4.5:plain9', '2.4.5:plain10', '2.4.5:plain11', '2.4.5:plain12']
+    lootable:
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: wyrm
+  keywords: [ "костяной", "дракон" ]
+  level: 20
+  name: "костяной дракон"
+  rname: "костяного дракона"
+  dname: "костяному дракону"
+  vname: "костяного дракона"
+  tname: "костяным драконом"
+  pname: "костяном драконе"
+  gender: "male"
+  min_damage: 31
+  max_damage: 107
+  damageVerb: 'обжег кислотой'
+  description: >-
+    Это огромный дракон-нежить, созданный магом Арканартоном в своих безумных экспериментах.
+  attributes:
+    health: 1000
+    strength: 34
+    armor: 4
+    acid_damage: 6
+    acid_resistance: 6
+  behaviors:
+    combat: true
+    aggro:
+      delay: 1
+      towards:
+        players: true
+        npcs: false
+    lootable:
+      currencies:
+        золото:
+          min: 100
+          max: 250
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:gem": 10

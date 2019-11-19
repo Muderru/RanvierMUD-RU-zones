@@ -100,4 +100,6 @@
       direction: восток
     - roomId: "gurba:gate_east"
       direction: запад
+    - roomId: "2.4.5:forest1"
+      direction: юг
 
