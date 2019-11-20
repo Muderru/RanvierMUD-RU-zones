@@ -5,7 +5,10 @@ const { Broadcast } = require('ranvier');
 module.exports = {
     listeners: {
       command: state => function (player, commandName, args) {
-      
+        if (player.isInCombat()) {
+          return Broadcast.sayAt(player, `Вы сейчас сражаетесь!`);
+        }
+
         Broadcast.sayAt(player, `Вы протиснулись сквозь камни завала.`);
         
         if (player.gender === 'male') {
