@@ -621,6 +621,9 @@
         "2.4.5:torch":
           cost: 25
           currency: золото
+        "2.4.5:rope":
+          cost: 5
+          currency: золото
       enterMessage: "Лучшие товары со всего мира!"
       leaveMessage: "Заходите еще!"
 - id: stone_giant
