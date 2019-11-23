@@ -36,7 +36,7 @@
     Узкая пыльная дорога заканчивается на севере у задворок небольшого
     города. От него несет чесноком и навозом, но в целом он кажется
     достаточно уютным.
-  npcs: ["boothill:guardian"]    
+  npcs: ["boothill:guardian"]
   exits:
     - roomId: "boothill:welcome"
       direction: север
@@ -59,6 +59,7 @@
   description: >-
     Эту яму вырыли совсем недавно, из ее стенок торчат несколько
     человеческих костей. Единственный выход отсюда ведет наверх.
+  npcs: ["boothill:gravedigger"]
   exits:
     - roomId: "boothill:boothill"
       direction: вверх
@@ -109,7 +110,7 @@
     перегороженной ржавой решеткой. Судя по рассказам, это самая
     дружелюбная тюрьма в окрестностях. Заключенных здесь не пытают,
     им просто сразу рубят головы.
-  npcs: ["boothill:guardian2"]    
+  npcs: ["boothill:guardian2"]
   exits:
     - roomId: "boothill:infront_jail"
       direction: запад

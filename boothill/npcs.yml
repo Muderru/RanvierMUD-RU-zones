@@ -200,6 +200,7 @@
     mana: 150
   behaviors:
     combat: true
+    assist: true
     lootable:
       currencies:
         золото:
@@ -232,6 +233,8 @@
     mana: 150
   behaviors:
     combat: true
+    block:
+      exits: [ 'восток' ]
     lootable:
       currencies:
         золото:
@@ -267,5 +270,24 @@
   min_damage: 1500
   max_damage: 3000
   level: 99
-  quests: ['boothill:killkobolds']  
+  quests: ['boothill:killkobolds']
   description: "Этот шахтер сильно пьян и едва способен шевелить языком. Видно, что он чем-то сильно расстроен."
+- id: gravedigger
+  keywords: ["могильщик", "старик", "старый"]
+  name: "старый могильщик"
+  rname: "старого могильщика"
+  dname: "старому могильщику"
+  vname: "старого могильщика"
+  tname: "старым могильщиком"
+  pname: "старом могильщике"
+  gender: "male"
+  min_damage: 1500
+  max_damage: 3000
+  level: 99
+  description: "Судя по шрамам на лице, этот старик прошёл не через одну войну."
+  metadata:
+    trainer:
+      skill: "lunge"
+      cost: 1
+      requirements: []
+

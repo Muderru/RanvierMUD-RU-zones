@@ -33,7 +33,7 @@
           currency: золото
         "gurba:sword":
           cost: 300
-          currency: золото          
+          currency: золото
       enterMessage: "Подходите! Покупайте великолепные товары!"
       leaveMessage: "Возвращайтесь обратно!"
 - id: frida
@@ -287,6 +287,8 @@
     cutting_resistance: 2
   behaviors:
     combat: true
+    assist: true
+    memory: true
     lootable:
       currencies:
         золото:
@@ -324,9 +326,11 @@
     crushing_damage: 1
   behaviors:
     combat: true
+    assist: true
+    memory: true
     wander:
       interval: 30
-      areaRestricted: true    
+      areaRestricted: true
     lootable:
       currencies:
         золото:
@@ -349,3 +353,48 @@
     Вот уже много лет он управляет Гильдией бойцов Гурбы.
     Несмотря на возраст, это все еще крепкий мужчина и умелый боец.
   level: 99
+  metadata:
+    trainer:
+      skill: "smite"
+      cost: 2
+      requirements: []
+- id: wandering_mage
+  keywords: [ 'маг', 'странствующий' ]
+  level: 12
+  name: "странствующий маг"
+  rname: "странствующего мага"
+  dname: "странствующему магу"
+  vname: "странствующего мага"
+  tname: "странствующим магом"
+  pname: "странствующем маге"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  damageVerb: 'испепелил'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Вы видите седого старика, укутанного в бесформенную хламиду.
+    На голове его широкополая шляпа, а в руке он сжимает сучковатый
+    посох.
+  attributes:
+    health: 1000
+    strength: 30
+    agility: 30
+    intellect: 30
+    fire_damage: 2
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    capable:
+      skills: [ ]
+      spells: [ 'heal', 'fireball' ]
+    wander:
+      interval: 30
+      areaRestricted: true
+  metadata:
+    trainer:
+      spell: "fireball"
+      cost: 1
+      requirements: []
