@@ -355,7 +355,7 @@
   level: 99
   metadata:
     trainer:
-      skill: "smite"
+      skill: "judge"
       cost: 2
       requirements: []
 - id: wandering_mage
@@ -378,7 +378,8 @@
     На голове его широкополая шляпа, а в руке он сжимает сучковатый
     посох.
   attributes:
-    health: 1000
+    health: 800
+    mana: 1000
     strength: 30
     agility: 30
     intellect: 30
@@ -398,3 +399,77 @@
       spell: "fireball"
       cost: 1
       requirements: []
+- id: drunk_doctor
+  keywords: [ 'пьяный', 'лекарь' ]
+  level: 12
+  name: "пьяный лекарь"
+  rname: "пьяного лекаря"
+  dname: "пьяному лекарю"
+  vname: "пьяного лекаря"
+  tname: "пьяным лекарем"
+  pname: "пьяном лекаре"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  damageVerb: 'огрел'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Пьяный лысый мужчина что-то бормочет себе под нос.
+    Дрожащими руками он осушает одну рюмку за другой.
+  attributes:
+    health: 800
+    mana: 1000
+    strength: 30
+    agility: 30
+    intellect: 30
+    fire_damage: 2
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    capable:
+      skills: [ ]
+      spells: [ 'heal', 'fireball' ]
+  metadata:
+    trainer:
+      spell: "heal"
+      cost: 1
+      requirements: []
+- id: prisoner
+  keywords: ["человек"]
+  name: "человек в колодках"
+  rname: "человека в колодках"
+  dname: "человеку в колодках"
+  vname: "человека в колодках"
+  tname: "человеком в колодках"
+  pname: "человеке в колодках"
+  gender: "male"
+  description: >-
+    Неизвестно за что был осужден этот человек, да это уже и не
+    важно, даже ошибочные приговоры суда никогда не отменяются.
+  level: 99
+  metadata:
+    trainer:
+      spell: "plea"
+      cost: 2
+      requirements: []
+- id: guild_trainer
+  keywords: ["тренер"]
+  name: "тренер гильдии бойцов"
+  rname: "тренера гильдии бойцов"
+  dname: "тренеру гильдии бойцов"
+  vname: "тренера гильдии бойцов"
+  tname: "тренером гильдии бойцов"
+  pname: "тренере гильдии бойцов"
+  gender: "male"
+  description: >-
+    Этот человек обучает новичков различным приемам обращения
+    мечом и щитом. Поймав на себе его неодобрительный взгляд, вы
+    ловите себя на мысли, что вам здесь не рады.
+  level: 99
+  metadata:
+    trainer:
+      skill: 'shieldblock'
+      cost: 3
+      requirements: [ 'skill_judge' ]

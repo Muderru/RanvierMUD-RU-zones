@@ -61,7 +61,7 @@
     combat: true
     wander:
       interval: 20
-      restrictTo: ['boothill:infront_jail', 'boothill:infront_saloon', 'boothill:infront_store']    
+      restrictTo: ['boothill:infront_jail', 'boothill:infront_saloon', 'boothill:infront_store']
     lootable:
       currencies:
         золото:
@@ -132,7 +132,7 @@
           currency: золото
         "boothill:lovers_locket":
           cost: 20
-          currency: золото          
+          currency: золото
         "limbo:potionhealth1":
           cost: 100
           currency: золото

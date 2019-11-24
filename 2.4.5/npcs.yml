@@ -773,3 +773,162 @@
         - "limbo:potions"
         - "limbo:junk"
         - "2.4.5:gem": 10
+- id: mercenaries_head
+  keywords: [ 'глава' ]
+  name: "глава наемников"
+  rname: "главы наемников"
+  dname: "главе наемников"
+  vname: "главу наемников"
+  tname: "главой наемников"
+  pname: "главе наемников"
+  gender: "female"
+  description: >-
+    Это опытный искатель приключений, готовый за соответствующую
+    плату на любую авантюру. На нем надета легкая броня из
+    чёрной кожи.
+  level: 99
+  metadata:
+    trainer:
+      skill: 'smite'
+      cost: 1
+      requirements: [ ]
+- id: ancient_ghost
+  keywords: [ 'призрак', 'древний' ]
+  name: "древний призрак"
+  rname: "древнего призрака"
+  dname: "древнему призраку"
+  vname: "древнего призрака"
+  tname: "древним призраком"
+  pname: "древнем призраке"
+  gender: "male"
+  description: >-
+    Вы видите призрачную зловещую фигуру в углу чердака.
+    От призрака веет холодом и ужасом.
+  level: 99
+  attributes:
+    invisibility: 1
+  metadata:
+    trainer:
+      spell: 'invisibility'
+      cost: 4
+      requirements: [ 'spell_detect_invisibility' ]
+- id: wandering_mage
+  keywords: [ 'маг', 'странствующий' ]
+  level: 13
+  name: "странствующий маг"
+  rname: "странствующего мага"
+  dname: "странствующему магу"
+  vname: "странствующего мага"
+  tname: "странствующим магом"
+  pname: "странствующем маге"
+  gender: "male"
+  min_damage: 20
+  max_damage: 70
+  damageVerb: 'испепелил'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Вы видите седого старика, укутанного в бесформенную хламиду.
+    На голове его широкополая шляпа, а в руке он сжимает сучковатый
+    посох.
+  attributes:
+    health: 800
+    mana: 1000
+    strength: 30
+    agility: 30
+    intellect: 30
+    fire_damage: 2
+    detect_invisibility: 10
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    capable:
+      skills: [ ]
+      spells: [ 'heal', 'paralysis', 'fireball' ]
+    wander:
+      interval: 30
+      restrictTo: ['2.4.5:south_sforst11', '2.4.5:south_sforst10', '2.4.5:south_sforst12', 
+                   '2.4.5:south_sshore3', '2.4.5:south_sforst13', '2.4.5:south_sshore4', 
+                   '2.4.5:south_sforst14', '2.4.5:south_sshore5', '2.4.5:south_sforst15' ]
+  metadata:
+    trainer:
+      spell: "detect_invisibility"
+      cost: 3
+      requirements: []
+- id: scout
+  keywords: [ 'разведчик', 'усталый' ]
+  name: "усталый разведчик"
+  rname: "усталого разведчика"
+  dname: "усталому разведчику"
+  vname: "усталого разведчика"
+  tname: "усталым разведчиком"
+  pname: "усталом разведчике"
+  gender: "male"
+  description: >-
+    Судя по всему этот разведчик недавно вернулся из патрулирования
+    близлежащих лесов. Это видно по грязной одежде, перепачканной
+    зелеными пятнами от свежей листвы.
+  level: 99
+  metadata:
+    trainer:
+      skill: 'detect_hide'
+      cost: 3
+      requirements: [ ]
+- id: hiding_thief
+  keywords: [ 'маг', 'странствующий' ]
+  level: 13
+  name: "скрывающийся вор"
+  rname: "скрывающегося вора"
+  dname: "скрывающемуся вору"
+  vname: "скрывающегося вора"
+  tname: "скрывающимся вором"
+  pname: "скрывающемся воре"
+  gender: "male"
+  min_damage: 20
+  max_damage: 70
+  damageVerb: 'пырнул'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Это беглый преступник, скрывающийся в этих катакомбах.
+    Он не кажется опасным, быть может он спятил от одиночества.
+  attributes:
+    health: 800
+    mana: 1000
+    strength: 30
+    agility: 30
+    intellect: 30
+    piercing_damage: 2
+    hide: 1
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    capable:
+      skills: [ 'rend', 'lunge' ]
+      spells: [ ]
+  metadata:
+    trainer:
+      spell: "hide"
+      cost: 4
+      requirements: [ 'skill_detect_hide' ]
+- id: demon
+  keywords: [ 'пленённый', 'демон' ]
+  name: "пленённый демон"
+  rname: "пленённого демона"
+  dname: "пленённому демону"
+  vname: "пленённого демона"
+  tname: "пленённым демоном"
+  pname: "пленённом демоне"
+  gender: "male"
+  description: >-
+    Вы видите половину огромной фигуры демона, поднимающуюся из скалы.
+    Демон не может вырваться отсюда, магия сотворившая такое
+    была очень могущественной.
+  level: 99
+  metadata:
+    trainer:
+      spell: 'paralysis'
+      cost: 5
+      requirements: [ ]
