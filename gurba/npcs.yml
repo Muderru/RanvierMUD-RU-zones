@@ -473,3 +473,21 @@
       skill: 'shieldblock'
       cost: 3
       requirements: [ 'skill_judge' ]
+- id: swineherd
+  keywords: ["свинопас"]
+  name: "свинопас"
+  rname: "свинопаса"
+  dname: "свинопасу"
+  vname: "свинопаса"
+  tname: "свинопасом"
+  pname: "свинопасе"
+  gender: "male"
+  description: >-
+    Щербатый чудаковатый фермер смотрит на вас придурковатым взглядом,
+    от которого вам становится не по себе. За несколько монет он готов
+    предоставить вам ночлежку среди своих свиней.
+  script: 'swineherd'
+  level: 99
+  metadata:
+    innkeeper:
+      cost: 100
