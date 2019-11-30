@@ -360,8 +360,9 @@
     она всегда ограничена городской стеной, которая в данный момент
     возвышается на юге. Переулок проходит тут через небольшой торговый
     квартал и продолжается дальше на запад и восток.
+  npcs: ["gurba:guard_captain"]
   exits:
-    - roomId: "gurba:border_south4"
+    - roomId: "gurba:border_south3"
       direction: запад
     - roomId: "gurba:border_south5"
       direction: восток

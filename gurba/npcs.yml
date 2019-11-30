@@ -491,3 +491,85 @@
   metadata:
     innkeeper:
       cost: 100
+- id: guard_captain
+  keywords: [ "стражник" ]
+  level: 12
+  name: "капитан стражи"
+  rname: "капитана стражи"
+  dname: "капитану стражи"
+  vname: "капитана стражи"
+  tname: "капитаном стражи"
+  pname: "капитане стражи"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  damageVerb: 'резанул'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Этот опытный вояка руководит всеми местными стражниками.
+    При одном его приближении все преступники города пытаются
+    где-нибудь скрыться.
+  attributes:
+    health: 1200
+    strength: 30
+    agility: 30
+    cutting_damage: 1
+    crushing_damage: 1
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    capable:
+      skills: [ 'rend' ]
+      spells: [ 'heal' ]
+    leader:
+      followers: [ 'gurba:guardian2', 'gurba:guardian2' ]
+    wander:
+      interval: 30
+      areaRestricted: true
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 100
+      pools:
+        - "gurba:guardiansword": 10
+        - "gurba:stuff"
+- id: guardian2
+  keywords: [ "стражник" ]
+  level: 12
+  name: "стражник Гурбы"
+  rname: "стражника Гурбы"
+  dname: "стражнику Гурбы"
+  vname: "стражника Гурбы"
+  tname: "стражником Гурбы"
+  pname: "стражнике Гурбы"
+  gender: "male"
+  min_damage: 19
+  max_damage: 67
+  damageVerb: 'рубанул'
+  travelVerbIn: "пришёл"
+  travelVerbOut: "ушёл"
+  description: >-
+    Мускулистый мужчина закован с ног до головы в металлические доспехи.
+    Он пристально следит за прохожими и пресекает проникновению
+    преступных элементов.
+  attributes:
+    health: 1000
+    strength: 30
+    agility: 30
+    cutting_damage: 1
+    crushing_damage: 1
+  behaviors:
+    combat: true
+    assist: true
+    memory: true
+    lootable:
+      currencies:
+        золото:
+          min: 50
+          max: 100
+      pools:
+        - "gurba:guardiansword": 10
+        - "gurba:stuff"
