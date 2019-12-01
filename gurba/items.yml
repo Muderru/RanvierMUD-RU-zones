@@ -20,7 +20,6 @@
     stats:
       armor: 1
       health: 20
-  behaviors:
     sellable:
       value: 25
       currency: золото
@@ -46,7 +45,6 @@
     stats:
       armor: 3
       crushing_resistance: 1
-  behaviors:
     sellable:
       value: 30
       currency: золото
@@ -71,7 +69,6 @@
     stats:
       armor: 1
       agility: 1
-  behaviors:
     sellable:
       value: 30
       currency: золото
@@ -97,7 +94,6 @@
       armor: 1
       cutting_resistance: 1
       piercing_resistance: 1
-  behaviors:
     sellable:
       value: 35
       currency: золото
@@ -122,7 +118,6 @@
     stats:
       armor: 3
       strength: 1
-  behaviors:
     sellable:
       value: 35
       currency: золото
@@ -149,7 +144,6 @@
     speed: 3.0
     stats:
       crushing_damage: 3
-  behaviors:
     sellable:
       value: 50
       currency: золото
@@ -174,7 +168,6 @@
     stats:
       fire_resistance: 1
       cold_resistance: 1
-  behaviors:
     sellable:
       value: 50
       currency: золото
@@ -199,7 +192,6 @@
       armor: 2
       cutting_resistance: 1
       crushing_resistance: 1      
-  behaviors:
     sellable:
       value: 35
       currency: золото
@@ -225,7 +217,6 @@
     speed: 2.6
     stats:
       cutting_damage: 2
-  behaviors:
     sellable:
       value: 50
       currency: золото
@@ -250,7 +241,6 @@
       armor: 1
       fire_resistance: 1
       cold_resistance: 1      
-  behaviors:
     sellable:
       value: 30
       currency: золото
@@ -275,7 +265,6 @@
       armor: 1
       earth_damage: 1
       acid_damage: 1      
-  behaviors:
     sellable:
       value: 35
       currency: золото
@@ -301,7 +290,6 @@
     itemLevel: 6
     stats:
       armor: 2
-  behaviors:
     sellable:
       value: 45
       currency: золото
@@ -328,7 +316,6 @@
     speed: 2.0
     stats:
       piercing_damage: 2
-  behaviors:
     sellable:
       value: 50
       currency: золото
@@ -354,7 +341,6 @@
     itemLevel: 6
     stats:
       lightning_resistance: 2
-  behaviors:
     sellable:
       value: 55
       currency: золото
@@ -404,10 +390,9 @@
       armor: 4
       cutting_resistance: 1
       piercing_resistance: 1
-  behaviors:
     sellable:
       value: 100
-      currency: золото      
+      currency: золото
 - id: sentinelcloak
   name: "плащ часового"
   rname: "плаща часового"
@@ -431,10 +416,9 @@
       armor: 1
       cutting_resistance: 1
       piercing_resistance: 1
-  behaviors:
     sellable:
       value: 100
-      currency: золото      
+      currency: золото
 - id: sentinelsword
   name: "меч часового"
   rname: "меча часового"
@@ -457,7 +441,6 @@
     speed: 2.5
     stats:
       cutting_damage: 2
-  behaviors:
     sellable:
       value: 100
       currency: золото
@@ -483,8 +466,7 @@
     itemLevel: 6
     stats:
       armor: 2
-      cold_resistance: 1      
-  behaviors:
+      cold_resistance: 1
     sellable:
       value: 65
       currency: золото
@@ -511,7 +493,6 @@
       armor: 1
       health: 20
       piercing_damage: 1
-  behaviors:
     sellable:
       value: 55
       currency: золото
@@ -538,7 +519,6 @@
     stats:
       cutting_damage: 1
       crushing_damage: 1
-  behaviors:
     sellable:
       value: 100
       currency: золото
@@ -565,7 +545,6 @@
       armor: 1
       fire_resistance: 1
       earth_resistance: 1
-  behaviors:
     sellable:
       value: 100
       currency: золото

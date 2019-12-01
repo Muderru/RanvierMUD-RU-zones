@@ -96,7 +96,7 @@
   type: CONTAINER
   items: [ "newbie:stick" ]
   closed: false
-  maxItems: 1  
+  maxItems: 1
   metadata:
     noPickup: true
 - id: flower
