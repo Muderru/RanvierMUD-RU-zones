@@ -535,6 +535,7 @@
           max: 100
       pools:
         - "gurba:guardiansword": 10
+        - "gurba:captainarmor": 50
         - "gurba:stuff"
 - id: guardian2
   keywords: [ "стражник" ]

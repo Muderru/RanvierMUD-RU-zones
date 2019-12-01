@@ -548,3 +548,33 @@
     sellable:
       value: 100
       currency: золото
+- id: captainarmor
+  name: "доспех капитана стражи"
+  rname: "доспеха капитана стражи"
+  dname: "доспеху капитана стражи"
+  vname: "доспех капитана стражи"
+  tname: "доспехом капитана стражи"
+  pname: "доспехе капитана стражи"
+  gender: "male"  
+  type: ARMOR
+  roomDesc: "Доспех капитана стражи"
+  keywords: ["доспех"]
+  description: >-
+    Хороший доспех из прочного металла, украшенный витиеватыми
+    узорами. Он отполирован до блеска.
+  metadata:
+    quality: common
+    slot: "тело"
+    level: 12
+    itemLevel: 12
+    stats:
+      armor: 6
+      cutting_resistance: 1
+      piercing_resistance: 1
+      light: 5
+    sellable:
+      value: 250
+      currency: золото
+    requirements:
+      stamina: 25
+      skills: [ 'medium_armor' ]
