@@ -153,7 +153,7 @@
     combat: true
     wander:
       interval: 25
-      restrictTo: ['2.4.5:mine_tunnel16', '2.4.5::mine_tunnel17', '2.4.5:mine_tunnel15', '2.4.5:mine_tunnel19', '2.4.5:mine_tunnel18', '2.4.5:mine_tunnel22']
+      restrictTo: ['2.4.5:mine_tunnel16', '2.4.5:mine_tunnel17', '2.4.5:mine_tunnel15', '2.4.5:mine_tunnel19', '2.4.5:mine_tunnel18', '2.4.5:mine_tunnel22']
     aggro:
       delay: 2
       towards:
@@ -547,6 +547,7 @@
     Вы видите уродливого шамана орков. Он намного шире обычных орков.
   attributes:
     health: 850
+    mana: 650
     strength: 34
     armor: 4
     chaos_damage: 4
@@ -558,6 +559,9 @@
       towards:
         players: true
         npcs: false
+    capable:
+      skills: [ ]
+      spells: [ 'heal' ]
     lootable:
       currencies:
         золото:
@@ -932,3 +936,145 @@
       spell: 'paralysis'
       cost: 5
       requirements: [ ]
+- id: huorn
+  keywords: [ "гнилой", "древень" ]
+  level: 15
+  name: "гнилой древень"
+  rname: "гнилого древня"
+  dname: "гнилому древню"
+  vname: "гнилого древня"
+  tname: "гнилым древнем"
+  pname: "гнилом древне"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'хлестнул'
+  description: >-
+    Эта обезображенная фигура напоминает одновременно и человека и дерево.
+    Это все, что осталось от дриад - бывших хранителей этого леса.
+  attributes:
+    health: 850
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 4
+    earth_damage: 4
+    earth_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    wander:
+      interval: 25
+      restrictTo: ['2.4.5:south_sforst1', '2.4.5:south_sforst2', '2.4.5:south_sforst3', '2.4.5:south_sforst4', 
+                   '2.4.5:south_sforst5', '2.4.5:south_sforst6', '2.4.5:south_sforst7', '2.4.5:south_sforst8', 
+                   '2.4.5:south_sforst9' ]
+    capable:
+      skills: [ ]
+      spells: [ 'paralysis' ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: old_huorn
+  keywords: [ "древний", "древень" ]
+  level: 15
+  name: "древний древень"
+  rname: "древнего древня"
+  dname: "древнему древню"
+  vname: "древнего древня"
+  tname: "древним древнем"
+  pname: "древнем древне"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'огрел'
+  description: >-
+    Эта обезображенная фигура напоминает одновременно и человека и дерево.
+    Это все, что осталось от дриад - бывших хранителей этого леса. Этот
+    древень в полтора раза больше своих собратьев.
+  attributes:
+    health: 850
+    mana: 650
+    strength: 34
+    agility: 26
+    armor: 4
+    earth_damage: 4
+    earth_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    wander:
+      interval: 40
+      restrictTo: ['2.4.5:south_sforst1', '2.4.5:south_sforst2', '2.4.5:south_sforst3', '2.4.5:south_sforst4', 
+                   '2.4.5:south_sforst5', '2.4.5:south_sforst6', '2.4.5:south_sforst7', '2.4.5:south_sforst8', 
+                   '2.4.5:south_sforst9' ]
+    capable:
+      skills: [ 'shieldblock' ]
+      spells: [ 'plea' ]
+    leader:
+      followers: [ '2.4.5:huorn2', '2.4.5:huorn2' ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:bark_boots": 25
+        - "2.4.5:bark_armor": 25
+        - "2.4.5:bark_cap": 25
+- id: huorn2
+  keywords: [ "гнилой", "древень" ]
+  level: 15
+  name: "гнилой древень"
+  rname: "гнилого древня"
+  dname: "гнилому древню"
+  vname: "гнилого древня"
+  tname: "гнилым древнем"
+  pname: "гнилом древне"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'хлестнул'
+  description: >-
+    Эта обезображенная фигура напоминает одновременно и человека и дерево.
+    Это все, что осталось от дриад - бывших хранителей этого леса.
+  attributes:
+    health: 850
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 4
+    earth_damage: 4
+    earth_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 2
+      towards:
+        players: true
+        npcs: false
+    capable:
+      skills: [ ]
+      spells: [ 'paralysis' ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"

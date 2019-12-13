@@ -617,3 +617,87 @@
     sellable:
       value: 5
       currency: золото
+- id: bark_boots
+  name: "ботинки из коры"
+  rname: "ботинок из коры"
+  dname: "ботинкам из коры"
+  vname: "ботинки из коры"
+  tname: "ботинками из коры"
+  pname: "ботинках из коры"
+  gender: "plural"
+  type: ARMOR
+  roomDesc: "Экзотические ботинки из коры"
+  keywords: ["экзотические", "ботинки"]
+  description: >-
+    Эти ботинки сделаны из какой-то гибкой и прочной коры.
+    Выглядят они интересно и отлично защищают кожу.
+  metadata:
+    quality: common
+    slot: "обувь"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 3
+      mana_regeneration: 2
+    sellable:
+      value: 25
+      currency: золото
+    requirements:
+      intellect: 25
+      skills: [ 'light_armor' ]
+- id: bark_armor
+  name: "доспех из коры"
+  rname: "доспеха из коры"
+  dname: "доспеху из коры"
+  vname: "доспех из коры"
+  tname: "доспехом из коры"
+  pname: "доспехе из коры"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Экзотический доспех из коры"
+  keywords: ["экзотический", "доспех"]
+  description: >-
+    Этот доспех сделан из какой-то гибкой и прочной коры.
+    Выглядит он интересно и отлично защищает кожу.
+  metadata:
+    quality: common
+    slot: "тело"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 4
+      mana_regeneration: 2
+    sellable:
+      value: 25
+      currency: золото
+    requirements:
+      intellect: 25
+      skills: [ 'light_armor' ]
+- id: bark_cap
+  name: "шлем из коры"
+  rname: "шлема из коры"
+  dname: "шлему из коры"
+  vname: "шлем из коры"
+  tname: "шлемом из коры"
+  pname: "шлеме из коры"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Экзотический шлем из коры"
+  keywords: ["экзотический", "шлем"]
+  description: >-
+    Этот шлем сделан из какой-то гибкой и прочной коры.
+    Выглядит он интересно и отлично защищает голову.
+  metadata:
+    quality: common
+    slot: "голова"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 4
+      mana_regeneration: 2
+    sellable:
+      value: 25
+      currency: золото
+    requirements:
+      intellect: 25
+      skills: [ 'light_armor' ]

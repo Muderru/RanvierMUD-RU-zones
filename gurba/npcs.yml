@@ -189,7 +189,7 @@
           max: 30
       pools:
         - "gurba:dress": 10
-        - "gurba:stuff"        
+        - "gurba:stuff"
 - id: gurbavendor
   keywords: [ "разорившийся", "торговец" ]
   level: 10
@@ -512,6 +512,7 @@
     где-нибудь скрыться.
   attributes:
     health: 1200
+    mana: 400
     strength: 30
     agility: 30
     cutting_damage: 1

@@ -191,7 +191,7 @@
     stats:
       armor: 2
       cutting_resistance: 1
-      crushing_resistance: 1      
+      crushing_resistance: 1
     sellable:
       value: 35
       currency: золото
@@ -240,7 +240,7 @@
     stats:
       armor: 1
       fire_resistance: 1
-      cold_resistance: 1      
+      cold_resistance: 1
     sellable:
       value: 30
       currency: золото
@@ -264,7 +264,7 @@
     stats:
       armor: 1
       earth_damage: 1
-      acid_damage: 1      
+      acid_damage: 1
     sellable:
       value: 35
       currency: золото
