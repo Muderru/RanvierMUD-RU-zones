@@ -83,7 +83,7 @@
     в руках вы не будете выглядеть бестолковым лентяем.
   metadata:
     level: 1
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 1
     quality: common
     minDamage: 5
@@ -158,7 +158,7 @@
     шахтах шпалы. На большее он, наверно, и не годится.
   metadata:
     level: 2
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 2
     quality: common
     minDamage: 6
@@ -202,7 +202,7 @@
     очистить от ржавчины и грязи.
   metadata:
     level: 3
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 3
     quality: common
     minDamage: 7

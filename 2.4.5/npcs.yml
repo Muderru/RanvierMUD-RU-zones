@@ -106,6 +106,7 @@
     тварь с полуметровыми хелицерами одним своим видом способна напугать до смерти.
   attributes:
     health: 1000
+    mana: 1000
     strength: 34
     armor: 4
     fire_damage: 6
@@ -1078,3 +1079,184 @@
       pools:
         - "limbo:potions"
         - "limbo:junk"
+- id: moon_demon
+  keywords: [ "демон" ]
+  level: 15
+  name: "демон Лунного озера"
+  rname: "демона Лунного озера"
+  dname: "демону Лунного озера"
+  vname: "демона Лунного озера"
+  tname: "демоном Лунного озера"
+  pname: "демоне Лунного озера"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'оцарапал'
+  description: >-
+    Эта уродливая рогатая фигура внушает ужас и отвращение. Призванному
+    из самих глубин ада демону - не место в этом мире.
+  attributes:
+    health: 850
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 4
+    chaos_damage: 4
+    chaos_resistance: 1
+  behaviors:
+    combat: true
+    aggro:
+      delay: 1
+      towards:
+        players: true
+        npcs: false
+    wander:
+      interval: 20
+      restrictTo: ['2.4.5:south_sshore1', '2.4.5:south_sshore2', '2.4.5:south_sshore3', '2.4.5:south_sshore4', 
+                   '2.4.5:south_sshore5', '2.4.5:south_sshore6', '2.4.5:south_sshore7', '2.4.5:south_sshore8', 
+                   '2.4.5:south_sshore9', '2.4.5:south_sshore10', '2.4.5:south_sshore11', '2.4.5:south_sshore12', 
+                   '2.4.5:south_sshore13', '2.4.5:south_sshore14', '2.4.5:south_sshore15', '2.4.5:south_sshore16', 
+                   '2.4.5:south_sshore17', '2.4.5:south_sshore18', '2.4.5:south_sshore19', '2.4.5:south_sshore20', 
+                   '2.4.5:south_sshore21', '2.4.5:south_sshore22', '2.4.5:south_sshore23', '2.4.5:south_sshore24', 
+                   '2.4.5:south_sshore25', '2.4.5:south_sshore26', '2.4.5:south_sshore27', '2.4.5:south_sshore28' ]
+    capable:
+      skills: [ 'smite' ]
+      spells: [ ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:moon_ring": 10
+        - "2.4.5:moon_amulet": 10
+- id: rock_bird
+  keywords: [ "скальный", "наездник" ]
+  level: 15
+  name: "скальный наездник"
+  rname: "скального наездника"
+  dname: "скальному наезднику"
+  vname: "скального наездника"
+  tname: "скальным наездником"
+  pname: "скальном наезднике"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'клюнул'
+  description: >-
+    Вы видите огромную полуптицу-полуящера, угрожающе щелкающую
+    зубастым клювом в вашу сторону. Очевидно, что скальный наездник
+    пытается отогнать вас от своего гнезда.
+  attributes:
+    health: 900
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 4
+    piercing_damage: 4
+    piercing_resistance: 1
+  behaviors:
+    combat: true
+    assist: true
+    capable:
+      skills: [ 'rend' ]
+      spells: [ ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:rock_bird_cloak": 40
+- id: rock_bird_child
+  keywords: [ "скальный", "наездник", "детёныш", "детеныш" ]
+  level: 15
+  name: "детёныш скального наездника"
+  rname: "детёныша скального наездника"
+  dname: "детёнышу скального наездника"
+  vname: "детёныша скального наездника"
+  tname: "детёнышем скального наездника"
+  pname: "детёныше скального наездника"
+  gender: "male"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'оцарапал'
+  description: >-
+    Это птенец скального наездника - огромной и агрессивной полуптицы-полуящера.
+  attributes:
+    health: 700
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 4
+    cutting_damage: 4
+    cutting_resistance: 1
+  behaviors:
+    combat: true
+    assist: true
+    capable:
+      skills: [ 'lunge' ]
+      spells: [ ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+- id: grey_shadow
+  keywords: [ "серая", "тень" ]
+  level: 15
+  name: "серая тень"
+  rname: "серая тень"
+  dname: "серая тень"
+  vname: "серая тень"
+  tname: "серая тень"
+  pname: "серая тень"
+  gender: "female"
+  min_damage: 25
+  max_damage: 85
+  damageVerb: 'опустошила'
+  description: >-
+    Вы видите неясную фигуру, сотканную из тени и тумана.
+  attributes:
+    health: 900
+    mana: 450
+    strength: 34
+    agility: 26
+    armor: 10
+    detect_invisibility: 3
+    detect_hide: 3
+  behaviors:
+    combat: true
+    wimpy: true
+    aggro:
+      delay: 1
+      towards:
+        players: true
+        npcs: false
+    wander:
+      interval: 25
+      restrictTo: ['2.4.5:south_sislnd1', '2.4.5:south_sislnd2', '2.4.5:south_sislnd3', '2.4.5:south_sislnd4', 
+                   '2.4.5:south_sislnd5', '2.4.5:south_sislnd6', '2.4.5:south_sislnd7', '2.4.5:south_sislnd8', 
+                   '2.4.5:south_sislnd9', '2.4.5:south_sislnd10', '2.4.5:south_sislnd11', '2.4.5:south_sislnd12', 
+                   '2.4.5:south_sislnd13', '2.4.5:south_sislnd14', '2.4.5:south_sislnd15', '2.4.5:south_sislnd16', 
+                   '2.4.5:south_sislnd17', '2.4.5:south_sislnd18' ]
+    capable:
+      skills: [ 'judge']
+      spells: [ ]
+    lootable:
+      currencies:
+        золото:
+          min: 80
+          max: 170
+      pools:
+        - "limbo:potions"
+        - "limbo:junk"
+        - "2.4.5:grey_stave": 10
+        - "2.4.5:grey_sword": 10

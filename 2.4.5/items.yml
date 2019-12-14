@@ -13,7 +13,7 @@
   type: WEAPON
   metadata:
     level: 12
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 12
     quality: common
     minDamage: 19
@@ -176,7 +176,7 @@
     работу орков, славящихся своей кровожадностью.
   metadata:
     level: 14
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 14
     quality: common
     minDamage: 20
@@ -205,7 +205,7 @@
     но их значение остается загадкой.
   metadata:
     level: 15
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 15
     quality: common
     minDamage: 25
@@ -257,7 +257,7 @@
     но их значение остается загадкой.
   metadata:
     level: 15
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 15
     quality: common
     minDamage: 25
@@ -305,7 +305,7 @@
     по весу.
   metadata:
     level: 15
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 15
     quality: common
     minDamage: 25
@@ -361,7 +361,7 @@
     монстров, но от волка им защититься удастся.
   metadata:
     level: 14
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 14
     quality: common
     minDamage: 20
@@ -463,7 +463,7 @@
     специальный желоб для ее стекания.
   metadata:
     level: 14
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 14
     quality: common
     minDamage: 20
@@ -551,7 +551,7 @@
     Это самый обычный булыжник. Ничего особенного в нем нет.
   metadata:
     level: 10
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 10
     quality: common
     minDamage: 15
@@ -580,7 +580,7 @@
     меч особой прочностью не отличается.
   metadata:
     level: 15
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 15
     quality: common
     minDamage: 25
@@ -701,3 +701,147 @@
     requirements:
       intellect: 25
       skills: [ 'light_armor' ]
+- id: moon_amulet
+  name: "амулет Лунного озера"
+  rname: "амулета Лунного озера"
+  dname: "амулету Лунного озера"
+  vname: "амулет Лунного озера"
+  tname: "амулетом Лунного озера"
+  pname: "амулете Лунного озера"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Амулет"
+  keywords: [ "амулет" ]
+  description: >-
+    Этот потертый амулет из какого-то цветного металла кажется
+    тёплым на ощупь.
+  metadata:
+    quality: common
+    slot: "шея"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 1
+      health_regeneration: 2
+    sellable:
+      value: 25
+      currency: золото
+    requirements:
+      stamina: 25
+      skills: [ ]
+- id: moon_ring
+  name: "кольцо Лунного озера"
+  rname: "кольца Лунного озера"
+  dname: "кольцу Лунного озера"
+  vname: "кольцо Лунного озера"
+  tname: "кольцом Лунного озера"
+  pname: "кольце Лунного озера"
+  gender: "neither"
+  type: ARMOR
+  roomDesc: "Кольцо"
+  keywords: [ "кольцо" ]
+  description: >-
+    Это потертое кольцо из какого-то цветного металла кажется
+    тёплым на ощупь.
+  metadata:
+    quality: common
+    slot: "указательный палец"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 1
+      health_regeneration: 2
+    sellable:
+      value: 25
+      currency: золото
+    requirements:
+      stamina: 25
+      skills: [ ]
+- id: rock_bird_cloak
+  name: "плащ из кожи скального наездника"
+  rname: "плаща из кожи скального наездника"
+  dname: "плащу из кожи скального наездника"
+  vname: "плащ из кожи скального наездника"
+  tname: "плащом из кожи скального наездника"
+  pname: "плаще из кожи скального наездника"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Кожаный плащ"
+  keywords: [ "плащ", "кожаный" ]
+  description: >-
+    Великолепный плащ, сделанный из прочной кожи скального наездника.
+    Несмотря на тонкость материала, плащ защитит и от зноя и от холода.
+  metadata:
+    quality: common
+    slot: "плечи"
+    level: 15
+    itemLevel: 15
+    stats:
+      armor: 4
+      cold_resistance: 1
+      fire_resistance: 1
+    sellable:
+      value: 35
+      currency: золото
+- id: grey_sword
+  name: "туманный меч"
+  rname: "туманного меча"
+  dname: "туманному мечу"
+  vname: "туманный меч"
+  tname: "туманным мечом"
+  pname: "туманном мече"
+  gender: "male"
+  damageVerb: "иссушил"
+  type: WEAPON
+  roomDesc: "Туманный меч"
+  keywords: [ "туманный", "меч" ]
+  description: >-
+    Струя тумана удивительным магическим образом приняла очертания
+    меча. Он источает холод и смерть.
+  metadata:
+    level: 15
+    slot: 'оружие'
+    itemLevel: 15
+    quality: common
+    minDamage: 25
+    maxDamage: 85
+    speed: 2.5
+    stats:
+      agility: 5
+    requirements:
+      strength: 25
+      skills: [ 'swords' ]
+    sellable:
+      value: 50
+      currency: золото
+- id: grey_stave
+  name: "туманный посох"
+  rname: "туманного посоха"
+  dname: "туманному посоху"
+  vname: "туманный посох"
+  tname: "туманным посохом"
+  pname: "туманном посохе"
+  gender: "male"
+  damageVerb: "иссушил"
+  type: WEAPON
+  roomDesc: "Туманный посох"
+  keywords: [ "туманный", "посох" ]
+  description: >-
+    Струя тумана удивительным магическим образом приняла очертания
+    изогнутого посоха. Он источает холод и смерть.
+  metadata:
+    level: 15
+    slot: 'оружие'
+    itemLevel: 15
+    quality: common
+    minDamage: 25
+    maxDamage: 85
+    speed: 2.5
+    stats:
+      intellect: 5
+    requirements:
+      strength: 25
+      skills: [ 'staves' ]
+    sellable:
+      value: 50
+      currency: золото

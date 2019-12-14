@@ -136,7 +136,7 @@
   type: WEAPON
   metadata:
     level: 6
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 6
     quality: common
     minDamage: 10
@@ -209,7 +209,7 @@
   description: "Самый обычный короткий меч, да еще и ржавый."
   metadata:
     level: 6
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 6
     quality: common
     minDamage: 10
@@ -308,7 +308,7 @@
   type: WEAPON
   metadata:
     level: 6
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 6
     quality: common
     minDamage: 7
@@ -433,7 +433,7 @@
   description: "Это неплохой меч одного из стражников Гурбы."
   metadata:
     level: 8
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 8
     quality: common
     minDamage: 12
@@ -510,7 +510,7 @@
   description: "Это неплохой меч одного из стражников Гурбы."
   metadata:
     level: 8
-    slot: 'правая рука'
+    slot: 'оружие'
     itemLevel: 8
     quality: common
     minDamage: 12
