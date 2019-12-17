@@ -736,7 +736,7 @@
   vname: "кольцо Лунного озера"
   tname: "кольцом Лунного озера"
   pname: "кольце Лунного озера"
-  gender: "neither"
+  gender: "neuter"
   type: ARMOR
   roomDesc: "Кольцо"
   keywords: [ "кольцо" ]
