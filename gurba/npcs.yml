@@ -24,7 +24,7 @@
           currency: золото
         "gurba:hat":
           cost: 150
-          currency: золото          
+          currency: золото
         "gurba:jacket":
           cost: 300
           currency: золото
@@ -44,7 +44,7 @@
   vname: "Фриду"
   tname: "Фридой"
   pname: "Фриде"
-  gender: "female"  
+  gender: "female"
   description: >-
     Вы видите красивую девушку с длинной черной косой и ромашкой за ухом.
   level: 99
@@ -104,6 +104,7 @@
     agility: 28
     crushing_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 30
@@ -141,6 +142,7 @@
     agility: 28
     crushing_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 30
@@ -178,6 +180,7 @@
     agility: 28
     piercing_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 30
@@ -214,6 +217,7 @@
     agility: 28
     earth_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 20
@@ -252,6 +256,7 @@
     agility: 20
     cutting_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 30
@@ -286,6 +291,7 @@
     agility: 30
     cutting_resistance: 2
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true
@@ -325,6 +331,7 @@
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true
@@ -385,6 +392,7 @@
     intellect: 30
     fire_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true
@@ -425,6 +433,7 @@
     intellect: 30
     fire_damage: 2
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true
@@ -518,6 +527,7 @@
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true
@@ -564,6 +574,7 @@
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     memory: true

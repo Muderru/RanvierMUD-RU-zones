@@ -17,6 +17,7 @@
     mana: 100
     strength: 12
   behaviors:
+    allattributes: 0
     combat: true
     aggro:
       delay: 1
@@ -58,13 +59,28 @@
   max_damage: 18
   level: 2
   description: "Глаза крысы горят зловещим красным огнем. С ее пасти капает пена, а огромные когти царапают пол."
+  attributes:
+    health: 160
+    mana: 120
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 20
       restrictTo: ['newbie:drinkme', 'newbie:entrance', 'newbie:equipment', 'newbie:fighting', 'newbie:quest']
     wimpy: true
     memory: true
-  attributes:
-    health: 160
-    mana: 120
+- id: captain
+  keywords: ["капитан", "прайд", "Прайд"]
+  name: "капитан Прайд"
+  rname: "капитана Прайда"
+  dname: "капитану Прайду"
+  vname: "капитана Прайда"
+  tname: "капитаном Прайдом"
+  pname: "капитане Прайде"
+  gender: "male"
+  min_damage: 1500
+  max_damage: 3000
+  level: 99
+  script: 'captain'
+  description: "Вы видите усталого недовольного вояку, оставленного здесь для распределения новобранцев."

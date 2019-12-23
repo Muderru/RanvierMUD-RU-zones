@@ -18,7 +18,10 @@
     armor: 2
     cutting_damage: 4
   behaviors:
+    allattributes: 1
     combat: true
+    block:
+      exits: [ 'восток' ]
     lootable:
       currencies:
         золото:
@@ -77,6 +80,7 @@
     armor: 2
     cutting_damage: 3
   behaviors:
+    allattributes: 1
     combat: true
     wander:
       interval: 30
@@ -112,6 +116,7 @@
     fire_damage: 6
     fire_resistance: 6
   behaviors:
+    allattributes: 3
     combat: true
     aggro:
       delay: 2
@@ -151,6 +156,7 @@
     cutting_damage: 4
     cutting_resistance: 4
   behaviors:
+    allattributes: 1
     combat: true
     wander:
       interval: 25
@@ -190,6 +196,7 @@
     fire_damage: 5
     fire_resistance: 5
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 2
@@ -254,6 +261,7 @@
     cold_damage: 5
     cold_resistance: 5
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 3
@@ -291,6 +299,7 @@
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 3
@@ -329,6 +338,7 @@
     piercing_damage: 3
     piercing_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     lootable:
       currencies:
@@ -360,6 +370,7 @@
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     wander:
       interval: 20
@@ -394,6 +405,7 @@
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 1
@@ -437,7 +449,7 @@
           currency: золото
         "2.4.5:mug":
           cost: 50
-          currency: золото          
+          currency: золото
       enterMessage: "Заходите, дорогие гости! Заказывайте еду и выпивку, не стесняйтесь!"
       leaveMessage: "Всего доброго!"
 - id: leo
@@ -477,6 +489,7 @@
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 1
@@ -514,6 +527,7 @@
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 2
@@ -554,6 +568,7 @@
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 2
@@ -594,6 +609,7 @@
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
+    allattributes: 0
     combat: true
     aggro:
       delay: 3
@@ -655,6 +671,7 @@
     crushing_resistance: 2
     piercing_resistance: 2
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 3
@@ -694,6 +711,7 @@
     crushing_damage: 3
     crushing_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 6
@@ -733,6 +751,7 @@
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
+    allattributes: 0
     combat: true
     wander:
       interval: 25
@@ -763,6 +782,7 @@
     acid_damage: 6
     acid_resistance: 6
   behaviors:
+    allattributes: 3
     combat: true
     aggro:
       delay: 1
@@ -845,6 +865,7 @@
     fire_damage: 2
     detect_invisibility: 10
   behaviors:
+    allattributes: 1
     combat: true
     assist: true
     memory: true
@@ -907,6 +928,7 @@
     piercing_damage: 2
     hide: 1
   behaviors:
+    allattributes: 1
     combat: true
     assist: true
     memory: true
@@ -962,6 +984,7 @@
     earth_damage: 4
     earth_resistance: 1
   behaviors:
+    allattributes: 0
     combat: true
     aggro:
       delay: 2
@@ -1010,6 +1033,7 @@
     earth_damage: 4
     earth_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 2
@@ -1062,6 +1086,7 @@
     earth_damage: 4
     earth_resistance: 1
   behaviors:
+    allattributes: 0
     combat: true
     aggro:
       delay: 2
@@ -1104,6 +1129,7 @@
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     aggro:
       delay: 1
@@ -1158,6 +1184,7 @@
     piercing_damage: 4
     piercing_resistance: 1
   behaviors:
+    allattributes: 1
     combat: true
     assist: true
     capable:
@@ -1196,6 +1223,7 @@
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
+    allattributes: 0
     combat: true
     assist: true
     capable:
@@ -1233,6 +1261,7 @@
     detect_invisibility: 3
     detect_hide: 3
   behaviors:
+    allattributes: 0
     combat: true
     wimpy: true
     aggro:
