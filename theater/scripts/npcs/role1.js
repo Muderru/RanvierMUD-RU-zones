@@ -1,13 +1,15 @@
-'use strict';
-
 module.exports = {
   listeners: {
-    playerEnter: state => function (player) {
+    playerEnter: (state) => function (player) {
+      if (!player.equipment) {
+        return;
+      }
+
       let breast = false;
       let head = false;
 
       for (const [slot, item] of player.equipment) {
-        if (item.name == 'накладная грудь') {
+        if (item.name === 'накладная грудь') {
           breast = true;
         } else if (item.name === 'парик') {
           head = true;
@@ -23,12 +25,11 @@ module.exports = {
       }
     },
 
-    channelReceive: state => function (say, player, message) {
+    channelReceive: (state) => function (say, player, message) {
       if (message === 'Тебя убьют они, коли увидят.') {
         player.room.removeNpc(this, true);
         player.room.spawnNpc(state, 'theater:47735');
-        return;
       }
-    }
-  }
+    },
+  },
 };

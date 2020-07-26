@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast, Damage } = require('ranvier');
 
 module.exports = {
   listeners: {
-    playerEnter: state => function (player, prevRoom) {
+    playerEnter: (state) => function (player, prevRoom) {
       if (prevRoom.id === 47742) {
         Broadcast.sayAt(player, '<bold><red>Вы с криком сорвались вниз!</red></bold>');
         Broadcast.sayAt(player, '');
@@ -15,9 +13,9 @@ module.exports = {
         player.moveTo(nextRoom);
         look.execute(null, player, null);
 
-        const damage = new Damage('health', 1000, null, this);
+        const damage = new Damage('health', 250, null, this);
         damage.commit(player);
       }
-    }
-  }
+    },
+  },
 };
