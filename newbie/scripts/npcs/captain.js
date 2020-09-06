@@ -5,6 +5,10 @@ module.exports = {
         return;
       }
 
+      if (player.level > 1) {
+        return;
+      }
+
       const speak = state.EffectFactory.create('speak', {}, {
         messageList: [
           'Приветствую, %player%. Мы уже хотели записать тебя в дезертиры.',
